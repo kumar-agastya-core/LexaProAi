@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# LexaProAi — Python dependencies
+# Install: pip install -r requirements.txt
+#
+# System requirement: Tesseract OCR must be installed separately.
+#   macOS  : brew install tesseract tesseract-lang
+#   Ubuntu : apt-get install tesseract-ocr tesseract-ocr-deu
+# ─────────────────────────────────────────────────────────────────────────────
+
+# PDF text extraction (processor.py, ocr_preprocess.py)
+pdfplumber>=0.11.0
+
+# OCR for image-only / scanned PDFs (ocr_preprocess.py)
+ocrmypdf>=15.0.0
+
+# Fuzzy vendor name matching for contact lookup (pipeline.py)
+rapidfuzz>=3.6.1
+
+# Claude AI API — invoice data extraction + category classification (processor.py, pipeline.py)
+anthropic>=0.26.0
+
+# Lexware REST API client (agent/lexware_client.py)
+requests>=2.32.5
+
+# Reads API keys and settings from .env file (config.py)
+python-dotenv>=1.0.0
